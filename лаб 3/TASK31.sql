@@ -1,0 +1,5 @@
+﻿SELECT T_MATERIAL.name, T_MESSURE.name, T_inprice.price
+  FROM T_material LEFT JOIN T_MESSURE
+    ON T_MATERIAL.ID_MESSURE=T_MESSURE.ID_MESSURE 
+       LEFT JOIN T_INPRICE
+        ON T_inprice.price_date BETWEEN '06.01.2009' AND '31.08.2009'
